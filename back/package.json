@@ -9,6 +9,9 @@
   "author": "kelum sampath",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "node-rest-client": "^3.1.0"
   }
 }
