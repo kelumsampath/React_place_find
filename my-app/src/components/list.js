@@ -4,7 +4,7 @@ import './styles/list.css';
 class List extends Component{
     
     render(){
-       console.log("myplaces",this.props.placeslist.results)
+       //console.log("myplaces",this.props.placeslist.results)
        if(this.props.placeslist.results !== undefined){
         var listItems = this.props.placeslist.results.map((place) =>{
         return(

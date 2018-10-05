@@ -7,7 +7,7 @@ class Search extends Component{
         e.preventDefault();
         const value=this.refs.inputword.value;
         const set=this.props;
-        console.log(value)
+       // console.log(value)
         axios.post('http://localhost:9000/findplace', {
            place:value
           })
@@ -30,7 +30,7 @@ class Search extends Component{
                                                 <i className="fa fa-search h4 text-body"></i>
                                             </div>
                                             <div className="col">
-                                                <input className="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords" ref='inputword'/>
+                                                <input className="form-control form-control-lg form-control-borderless" type="search" placeholder="Search by city name here" ref='inputword'/>
                                             </div>
                                             <div className="col-auto">
                                                 <button className="btn btn-lg btn-success" onClick={this.search.bind(this)}>Search</button>
