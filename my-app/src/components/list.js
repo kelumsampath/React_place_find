@@ -6,15 +6,40 @@ class List extends Component{
     render(){
        console.log("myplaces",this.props.placeslist.results)
        if(this.props.placeslist.results !== undefined){
-        const listItems = this.props.placeslist.results.map((place) =>{
+        var listItems = this.props.placeslist.results.map((place) =>{
         return(
-            <li key={place.id}>{place.name}</li>
+            <div key={place.id}>
+                <li >
+                 <section className="search-box">
+                <div className="container-fluid">
+                    <div className="media">
+                        <div className="fav-box"><i className="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                        <img className="d-flex align-self-start" src={place.icon} alt="Generic placeholder image"/>
+                        <div className="media-body pl-3">
+                            <div className="price"><small>{place.name}</small></div>
+                            <div className="stats">
+                                <span><i className="fa fa-star checked"></i>{place.rating}</span>
+                                <span><i className="fa fa-check-circle active"></i>{place.open_now}</span>
+                            </div>
+                            <div className="address">{place.formatted_address}</div>
+                        </div>
+                        </div>
+                        
+            
+                    
+            </div>
+            </section>
+            </li>
+            </div>
+            
+            
         )
         }
 );
     }
         return(
-            <ul>{this.listItems}</ul>
+            <ul>{listItems}</ul>
         );
     }
 }
@@ -23,26 +48,6 @@ export default List;
 /*
 <div>
                 <ul>
-            <section className="search-box">
-                <div className="container-fluid">
-                    <div className="media">
-                        <div className="fav-box"><i className="fa fa-heart-o" aria-hidden="true"></i>
-                        </div>
-                        <img className="d-flex align-self-start" src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Generic placeholder image"/>
-                        <div className="media-body pl-3">
-                            <div className="price"><small>{listItems}</small></div>
-                            <div className="stats">
-                                <span><i className="fa fa-arrows-alt"></i>1678 Sq ft</span>
-                                <span><i className="fa fa-bath"></i>2 Beadrooms</span>
-                            </div>
-                            <div className="address">4062 Walnut Hill Drive
-                        Cincinnati</div>
-                        </div>
-                        </div>
-                        
-            
-                    
-            </div>
-            </section>
+           
             </ul>
             </div>*/

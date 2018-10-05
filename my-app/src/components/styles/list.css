@@ -25,3 +25,9 @@ background: linear-gradient(to bottom, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, 
 
 .map-box{background-color:#A3CCFF;}
 
+ul{
+    list-style: none;
+}
+.active{
+    font-size:24px;
+}
