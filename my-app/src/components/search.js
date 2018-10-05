@@ -27,7 +27,7 @@ class Search extends Component{
                                     <form className="card card-sm">
                                         <div className="card-body row no-gutters align-items-center">
                                             <div className="col-auto">
-                                                <i className="fas fa-search h4 text-body"></i>
+                                                <i className="fa fa-search h4 text-body"></i>
                                             </div>
                                             <div className="col">
                                                 <input className="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords" ref='inputword'/>

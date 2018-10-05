@@ -22,7 +22,9 @@ class List extends Component{
                                 <span><i className="fa fa-star checked"></i>{place.rating}</span>
                                 <span><i className="fa fa-check-circle active"></i>{place.open_now}</span>
                             </div>
+
                             <div className="address">{place.formatted_address}</div>
+                            <button type="button" className="btn btn-success" onClick={()=>this.props.addtofavourite(place.name)}>Add to favourite</button>
                         </div>
                         </div>
                         
